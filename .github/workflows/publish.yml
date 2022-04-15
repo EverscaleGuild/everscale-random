@@ -22,7 +22,6 @@ jobs:
           cache: 'yarn'
           cache-dependency-path: '**/yarn.lock'
       - run: yarn install
-      - run: yarn build
       - run: |
           git remote set-url origin https://git:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
           yarn release --user "github-actions-bot <support+actions@github.com>"
