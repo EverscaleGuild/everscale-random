@@ -4,30 +4,43 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" sizes="48x48" href="../asset/icon.png">
-    <title>Everscale DApp</title>
+    <title>Everscale random</title>
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Roboto Mono', monospace;
+        }
+    </style>
 </head>
 <body>
-    <div class="px-4 py-5 my-5 text-center">
+    <div class="px-4 py-5 my-5">
         <img class="d-block mx-auto mb-4" src="../asset/logo.svg" alt="everscale" height="100">
-        <div class="col-lg-6 mx-auto"><p class="lead mb-4" data-behavior="network"></p></div>
-        <div class="col-lg-6 mx-auto" data-behavior="extension" style="display: none">
+        <div class="col-lg-7 mx-auto text-center"><p class="lead mb-4" data-behavior="network"></p></div>
+        <div class="col-lg-7 mx-auto text-center" data-behavior="extension" style="display: none">
             <div class="mb-4 alert alert-danger" role="alert">Need installed Extension <a href="https://l1.broxus.com/everscale/wallet">EVER Wallet</a></div>
         </div>
-        <div class="col-lg-6 mx-auto" data-behavior="main" style="display: none">
-            <div class="card m-5 d-grid gap-2 d-sm-flex justify-content-sm-center">
-                <a href="https://gist.githubusercontent.com/ilyar/3ddd97cc0cef1f1c57ac690d8ae2522d/raw/5ffc8ca339ee7deade20c056b2a509fbbc144d2e/data-for-ama.json">Sample data</a>
+        <div class="col-lg-7 mx-auto" data-behavior="main" style="display: none">
+            <div class="card m-5 d-grid gap-2 d-sm-flex">
+                <p>
+                    <b>Data format:</b>
+                    <a href="https://raw.githubusercontent.com/EverscaleGuild/everscale-random/main/asset/sample_data_01.json">Sample 1</a>,
+                    <a href="https://raw.githubusercontent.com/EverscaleGuild/everscale-random/main/asset/sample_data_02.json">Sample 2</a>
+                    <a href="https://raw.githubusercontent.com/EverscaleGuild/everscale-random/main/asset/sample_data_03.json">Sample 3</a>
+                </p>
                 <div class="input-group mb-3">
                     <input
                             data-behavior="data"
                             type="text"
                             class="form-control"
-                            placeholder="https://everscaleguild.github.io/everscale-random//data.json">
+                            placeholder="https://raw.githubusercontent.com/EverscaleGuild/everscale-random/main/asset/sample_data_01.json">
                     <div class="input-group-append">
-                        <button class="btn btn-outline-secondary" type="button">LOAD</button>
+                        <button
+                                data-behavior="start"
+                                class="btn btn-outline-secondary" type="button">START</button>
                     </div>
                 </div>
-                <div class="card-body" data-behavior="out"></div>
+                <div class="card-body text-center" data-behavior="out"></div>
                 <div class="card-body" data-behavior="log"></div>
             </div>
         </div>
