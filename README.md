@@ -23,9 +23,5 @@ yarn start
 ## Publish
 
 ```shell
-yarn gh-pages
+URL=/everscale-random/ yarn release
 ```
-
-## Note
-
-    yarn add bootstrap convert-svg-to-png everdev gh-pages parcel serve broxus/ton-eth-bridge-token-contracts everscale-standalone-client typescript parcel-bundler

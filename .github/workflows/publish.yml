@@ -2,7 +2,14 @@ name: Publish
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
+    paths:
+      - .github/**
+      - asset/**
+      - src/**
+      - package.json
+      - yarn.lock
 
 jobs:
   publish:
