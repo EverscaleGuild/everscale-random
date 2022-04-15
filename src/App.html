@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="48x48" href="../asset/icon.png">
+    <title>Everscale DApp</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <div class="px-4 py-5 my-5 text-center">
+        <img class="d-block mx-auto mb-4" src="../asset/logo.svg" alt="everscale" height="100">
+        <div class="col-lg-6 mx-auto"><p class="lead mb-4" data-behavior="network"></p></div>
+        <div class="col-lg-6 mx-auto" data-behavior="extension" style="display: none">
+            <div class="mb-4 alert alert-danger" role="alert">Need installed Extension <a href="https://l1.broxus.com/everscale/wallet">EVER Wallet</a></div>
+        </div>
+        <div class="col-lg-6 mx-auto" data-behavior="main" style="display: none">
+            <div class="card m-5 d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <a href="https://gist.githubusercontent.com/ilyar/3ddd97cc0cef1f1c57ac690d8ae2522d/raw/5ffc8ca339ee7deade20c056b2a509fbbc144d2e/data-for-ama.json">Sample data</a>
+                <div class="input-group mb-3">
+                    <input
+                            data-behavior="data"
+                            type="text"
+                            class="form-control"
+                            placeholder="https://everscaleguild.github.io/everscale-random//data.json">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button">LOAD</button>
+                    </div>
+                </div>
+                <div class="card-body" data-behavior="out"></div>
+                <div class="card-body" data-behavior="log"></div>
+            </div>
+        </div>
+    </div>
+    <script src="App.ts" type="module" ></script>
+</body>
+</html>
