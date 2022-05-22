@@ -3927,21 +3927,26 @@ everdev@^1.1.1:
     request "^2.88.2"
     unzip-stream "^0.3.1"
 
-everscale-inpage-provider@^0.3.9:
-  version "0.3.9"
-  resolved "https://registry.yarnpkg.com/everscale-inpage-provider/-/everscale-inpage-provider-0.3.9.tgz#4b30413b680439de6e7f4e4b7041820aa51dcc6a"
-  integrity sha512-2uy8GjM5o/6bw+P+iqN/h7yDN1x6OHIMgWOTWenElZRcZ9076ULwDUEbTTji5gQYMj7tFYdpf2E/UsH1UcSRZQ==
+everscale-inpage-provider@^0.3.10:
+  version "0.3.10"
+  resolved "https://registry.yarnpkg.com/everscale-inpage-provider/-/everscale-inpage-provider-0.3.10.tgz#b8a53fa941ee51200c75831b503e1a508ed6e207"
+  integrity sha512-3Wkg7CSnd/ucweGvjBzkK35xOOnNorsMneDIjyrBNbMAOmtRjPG5rBUnybmXB9e9o49gApa6ELp/VPPZZ3WUPw==
 
-everscale-standalone-client@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/everscale-standalone-client/-/everscale-standalone-client-1.0.3.tgz#0aae2d8b76120c4cd4faef7f635f81c1b8c62bb5"
-  integrity sha512-uPfj0UZMzO1XIDWAaiRJsvbgyDApHC4RPgR5Mw2vajvEwpP2q6VVW8Yb5TcAXxFTbEDoMX/BpE4mvls37R/ipg==
+everscale-inpage-provider@^0.3.11:
+  version "0.3.11"
+  resolved "https://registry.yarnpkg.com/everscale-inpage-provider/-/everscale-inpage-provider-0.3.11.tgz#ffc2398824932146e92f4054aaed5819946d9745"
+  integrity sha512-1g1rBeuOgQSN1LSOKjykkC846WvSuhU50SVfW4yjvyUBU2Uzz0x40hdySLLT64Q0qDc8/HHQq/8Dr/2vWmr0wA==
+
+everscale-standalone-client@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/everscale-standalone-client/-/everscale-standalone-client-1.0.4.tgz#4ffa709deb1bc08470c27b43cb0f2d633e62f128"
+  integrity sha512-vmZMXaj2OyV9Sdw0SVcjJPgMlGGWn5HNn9e4NGJdU77jTfZKHAZGbFN2MluN+lgty7T7HUHOYmVHVyotSnxtmw==
   dependencies:
     "@broxus/await-semaphore" "^0.1.5"
     events "^3.3.0"
-    everscale-inpage-provider "^0.3.9"
+    everscale-inpage-provider "^0.3.10"
     fast-safe-stringify "^2.1.1"
-    nekoton-wasm "^0.1.12"
+    nekoton-wasm "^0.1.15"
 
 evp_bytestokey@^1.0.0, evp_bytestokey@^1.0.3:
   version "1.0.3"
@@ -5881,10 +5886,10 @@ negotiator@0.6.3:
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.3.tgz#58e323a72fedc0d6f9cd4d31fe49f51479590ccd"
   integrity sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg==
 
-nekoton-wasm@^0.1.12:
-  version "0.1.12"
-  resolved "https://registry.yarnpkg.com/nekoton-wasm/-/nekoton-wasm-0.1.12.tgz#575560a43bec628fa52df592ffef84bdde30a894"
-  integrity sha512-9aUVaHbW9gxWvmhIcPosbwDR7AdScX56vthEI97ecC7nYKrchjtfcwRM/6qUfQIeS2cu5Qw+OyIM5YcTuRPyWw==
+nekoton-wasm@^0.1.15:
+  version "0.1.15"
+  resolved "https://registry.yarnpkg.com/nekoton-wasm/-/nekoton-wasm-0.1.15.tgz#f201385a2fe8ff71d5c44ee65b8acf139df2390c"
+  integrity sha512-2nQ8mqKC5GJ0lwdGT660U+j43fVk2YToC/M8z6RP1QPaGiX44q9fg4yvtHUzAS24V9Zb41QwAm3GBLyaWF2QbQ==
 
 nice-try@^1.0.4:
   version "1.0.5"

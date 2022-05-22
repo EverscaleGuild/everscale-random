@@ -1,14 +1,15 @@
 import {Address, Contract, ProviderRpcClient} from 'everscale-inpage-provider'
+import {EverscaleStandaloneClient} from "everscale-standalone-client";
 import {BigNumber} from 'bignumber.js'
 import ftTokenRootABI from 'broxus-ton-tokens-contracts/build/TokenRoot.abi.json'
 import ftTokenWalletABI from 'broxus-ton-tokens-contracts/build/TokenWallet.abi.json'
 
-const ever = new ProviderRpcClient()
-// const ever = new ProviderRpcClient({
-//     // fallback: () => EverscaleStandaloneClient.create({
-//     //     connection: 'mainnet',
-//     // }),
-// })
+const ever = new ProviderRpcClient({
+    fallback: () => EverscaleStandaloneClient.create({
+        connection: 'mainnet',
+    }),
+})
+
 class FT {
     meta: TokenMeta
     contract: Contract<ftTokenRootABI>
